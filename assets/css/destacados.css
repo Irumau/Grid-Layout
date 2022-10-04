@@ -1,0 +1,80 @@
+
+.destaques{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    height: calc(110vh - 50px);
+    gap: .3rem;
+}
+
+.destaques__principal{
+    background: url(https://cdn2.unrealengine.com/Fortnite%2Fblog%2Fseason-x-blog%2F10BR_Announce_KeyArt_BlogHeader-1920x1080-aca2c821a0e9ece24d5545ce7171d58f76598013.jpg) center/ cover no-repeat;
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+}
+
+.destaques__secundario:nth-child(2){
+    background: url(../img/pubg.jpg) center / cover no-repeat;
+    grid-column: 4 / 4;
+    grid-row: 1 / 2;
+}
+.destaques__secundario:nth-child(3){
+    background: url(../img/slack.png) center / cover no-repeat;
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+
+}
+
+.destaques__secundario:nth-child(4){
+    background: url(../img/whatsapp.png) center / cover no-repeat;
+    grid-column: 4/5;
+    grid-row: 3 / 4;
+}
+
+.destaques__secundario:nth-child(5) {
+    background: url(https://assets.reedpopcdn.com/valorant-tips-tricks-7031-1591368969133.jpg/BROK/thumbnail/1200x900/quality/100/valorant-tips-tricks-7031-1591368969133.jpg) center / cover no-repeat;
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+.destaques__titulo{
+    text-align: center;
+padding: .6rem;
+    width: 100%;
+    color: #fdfdfd;
+    background: rgb(0, 0, 0, 0.85);
+}
+
+
+.box{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+.destaques__categorias{
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+}
+
+.destaques__categorias___lista{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.destaques__categorias___item{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding: 1rem;
+    background: #fdfdfdfd;
+    color: #333;
+}
+
+.destaques__categorias___link{
+    color: inherit;
+}
+
